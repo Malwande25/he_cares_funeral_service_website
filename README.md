@@ -22,3 +22,10 @@ For VS Code, you can use the Live Server extension.
 6. Run `firebase deploy`.
 
 Before publishing, replace the placeholder Facebook `#` link with the official Facebook page URL and confirm the website domain.
+
+## Contact location
+The Contact Us section includes the physical address **Cabazana AA, N2 Phakade, Mount Ayliff, 4735**, an embedded Google Maps view, and an “Open in Google Maps” link.
+
+
+## Service photography
+Real photographs for Coffins, Caskets and Flowers have been added from Pexels.

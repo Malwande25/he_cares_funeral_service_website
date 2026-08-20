@@ -1,89 +1,205 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.17.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.17.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.17.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="He-Cares Funeral Services — compassionate, professional funeral services bringing comfort, dignity and closure to every community.">
+  <title>He-Cares Funeral Services | Compassion, Dignity & Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="He-Cares Funeral Services home">
+        <img src="assets/he-cares-logo.jpg" alt="He-Cares Funeral Services logo">
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#planning">Funeral Planning</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </header>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">HE-CARES FUNERAL SERVICES</p>
+        <h1>Compassionate care when it matters most.</h1>
+        <p class="hero-quote">“We give the same comfort God has given us.”</p>
+        <p class="hero-copy">Professional funeral services delivered with compassion, dignity and respect for every family and community.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Contact Us</a>
+          <a class="btn btn-outline" href="#services">Explore Our Services</a>
+        </div>
+      </div>
+    </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <section class="vision section" id="about">
+      <div class="container narrow reveal">
+        <p class="section-kicker">OUR VISION</p>
+        <h2>Comfort. Dignity. Closure.</h2>
+        <div class="vision-card">
+          <p>Providing compassionate, professional services that bring comfort, dignity, and closure to every community.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="section-kicker">ABOUT HE-CARES</p>
+          <h2>Professional support with a compassionate heart.</h2>
+          <p>At He-Cares Funeral Services, we understand that losing a loved one is one of life's most difficult experiences. Our role is to help families navigate the practical arrangements with care, respect and professionalism.</p>
+          <p>From funeral preparation and transportation to the service itself, we provide dependable support designed to reduce the burden on families and help them honour their loved ones with dignity.</p>
+        </div>
+        <div class="values-card reveal">
+          <h3>Our commitment</h3>
+          <div class="value"><span>01</span><div><strong>Compassion</strong><p>We treat every family with empathy and understanding.</p></div></div>
+          <div class="value"><span>02</span><div><strong>Dignity</strong><p>We honour every life with respect and care.</p></div></div>
+          <div class="value"><span>03</span><div><strong>Professionalism</strong><p>We provide organised, reliable and respectful service.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">OUR SERVICES</p>
+          <h2>Everything you need, thoughtfully coordinated.</h2>
+          <p>Our services are designed to support families through the funeral process from preparation to final arrangements.</p>
+        </div>
+        <div class="service-photo-grid reveal">
+          <article class="service-photo-card">
+            <img src="https://images.pexels.com/photos/7317673/pexels-photo-7317673.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Funeral coffin surrounded by flowers and candles" loading="lazy">
+            <div class="service-photo-caption"><span>01</span><div><strong>Coffins</strong><p>Respectful presentation and funeral arrangements.</p></div></div>
+          </article>
+          <article class="service-photo-card">
+            <img src="https://images.pexels.com/photos/7317668/pexels-photo-7317668.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Polished casket adorned with white flowers" loading="lazy">
+            <div class="service-photo-caption"><span>02</span><div><strong>Caskets</strong><p>Elegant casket options for a dignified farewell.</p></div></div>
+          </article>
+          <article class="service-photo-card">
+            <img src="https://images.pexels.com/photos/7317676/pexels-photo-7317676.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Funeral floral arrangements in a peaceful setting" loading="lazy">
+            <div class="service-photo-caption"><span>03</span><div><strong>Flowers</strong><p>Beautiful floral tributes for remembrance and honour.</p></div></div>
+          </article>
+        </div>
+        <p class="photo-credit">Photography: Pexels — free-to-use stock photography. <a href="https://www.pexels.com/photo/flowers-on-the-chair-7317676/" target="_blank" rel="noopener">View source</a>.</p>
+
+        <div class="service-grid">
+          <article class="service-card reveal"><span class="service-icon">✦</span><h3>Coffin / Casket</h3><p>Respectful coffin and casket options for every family's needs.</p></article>
+          <article class="service-card reveal"><span class="service-icon">↗</span><h3>Transport</h3><p>Professional transportation support for funeral arrangements.</p></article>
+          <article class="service-card reveal"><span class="service-icon">❀</span><h3>Flowers</h3><p>Floral arrangements to help families honour and remember.</p></article>
+          <article class="service-card reveal"><span class="service-icon">❄</span><h3>Mobile Refrigerator</h3><p>Mobile refrigeration support where required.</p></article>
+          <article class="service-card reveal"><span class="service-icon">⌂</span><h3>Tent</h3><p>Funeral tents and practical event setup support.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◈</span><h3>Decor</h3><p>Thoughtful decor to create a respectful setting.</p></article>
+          <article class="service-card reveal"><span class="service-icon">▱</span><h3>Tables &amp; Chairs</h3><p>Seating and furniture arrangements for gatherings.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◉</span><h3>Catering</h3><p>Food and refreshment arrangements for funeral gatherings.</p></article>
+          <article class="service-card reveal"><span class="service-icon">♡</span><h3>Pre &amp; Post-Funeral Free Counselling</h3><p>Compassionate counselling support before and after the funeral.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◖</span><h3>Sound System</h3><p>Audio support for funeral services and gatherings.</p></article>
+          <article class="service-card reveal"><span class="service-icon">▤</span><h3>Funeral Programs</h3><p>Professional funeral programme preparation and printing support.</p></article>
+          <article class="service-card reveal"><span class="service-icon">△</span><h3>Lowering Device</h3><p>Practical equipment support for a dignified burial.</p></article>
+          <article class="service-card reveal"><span class="service-icon">†</span><h3>Tombstone</h3><p>Tombstone arrangements to commemorate a loved one's life.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="planning section" id="planning">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">FUNERAL PLANNING</p>
+          <h2>We help you take the next step.</h2>
+          <p>You do not have to manage every detail alone. Contact us and we will guide you through the arrangements.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><h3>Consultation</h3><p>Speak with our team about your family's needs and arrangements.</p></div>
+          <div class="step reveal"><span>02</span><h3>Arrangements</h3><p>We coordinate the selected services and practical requirements.</p></div>
+          <div class="step reveal"><span>03</span><h3>Funeral Service</h3><p>We help ensure the service is organised respectfully and professionally.</p></div>
+          <div class="step reveal"><span>04</span><h3>Aftercare</h3><p>We remain available to support families after the funeral.</p></div>
+        </div>
+        <div class="planning-cta reveal">
+          <div><strong>Need assistance now?</strong><span>Call our team for compassionate support.</span></div>
+          <a class="btn btn-primary" href="tel:+27715177592">Call 071 517 7592</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-kicker">CONTACT US</p>
+          <h2>We are here to help.</h2>
+          <p>For funeral arrangements, service enquiries or general assistance, contact He-Cares Funeral Services.</p>
+          <div class="contact-list">
+            <a href="tel:+27715177592"><span>☎</span><div><small>Phone</small><strong>071 517 7592</strong></div></a>
+            <a href="tel:+27781196290"><span>☎</span><div><small>Alternative</small><strong>078 119 6290</strong></div></a>
+            <a href="mailto:info@hecaresfs.co.za"><span>✉</span><div><small>Email</small><strong>info@hecaresfs.co.za</strong></div></a>
+            <a href="https://www.hecaresfs.co.za" target="_blank" rel="noopener"><span>◎</span><div><small>Website</small><strong>www.hecaresfs.co.za</strong></div></a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Cabazana+AA%2C+N2+Phakade%2C+Mount+Ayliff%2C+4735%2C+South+Africa" target="_blank" rel="noopener"><span>⌖</span><div><small>Physical Address</small><strong>Cabazana AA, N2 Phakade, Mount Ayliff, 4735</strong></div></a>
+          </div>
+          <a class="social-link" href="#" aria-label="He-Cares Facebook page">f &nbsp; Like us on Facebook @ He-Cares</a>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-heading">
+            <p class="section-kicker">FIND US</p>
+            <h3>Our Location</h3>
+            <p>Cabazana AA, N2 Phakade, Mount Ayliff, 4735</p>
+          </div>
+          <div class="map-frame">
+            <iframe title="He-Cares Funeral Services location" src="https://www.google.com/maps?q=Cabazana+AA%2C+N2+Phakade%2C+Mount+Ayliff%2C+4735%2C+South+Africa&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Cabazana+AA%2C+N2+Phakade%2C+Mount+Ayliff%2C+4735%2C+South+Africa" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send an enquiry</h3>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+          <label for="service">Service required</label>
+          <select id="service" name="service">
+            <option>General enquiry</option>
+            <option>Coffin / Casket</option>
+            <option>Transport</option>
+            <option>Funeral Planning</option>
+            <option>Flowers</option>
+            <option>Catering</option>
+            <option>Pre & Post-Funeral Counselling</option>
+            <option>Other</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us how we can assist..." required></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry via WhatsApp</button>
+          <p class="form-note">Your enquiry will open in WhatsApp with the details you provide.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div>
+        <h3>He-Cares Funeral Services</h3>
+        <p>Providing compassionate, professional services that bring comfort, dignity, and closure to every community.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#planning">Planning</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">“We give the same comfort God has given us.”</div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/27715177592" target="_blank" rel="noopener" aria-label="Chat with He-Cares on WhatsApp">WA</a>
+  <script src="script.js"></script>
+</body>
 </html>
